@@ -1,2 +1,2 @@
 # resume.github.io
-hi
+https://sandip631.github.io/resume.github.io/
