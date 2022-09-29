@@ -25,7 +25,8 @@ body {
     --button_background: #5679a3;
     --primary_button_background: #fe7649;
     --background_color: #e6ecf5;
-    --white_color: #ffff
+    --white_color: #ffff;
+    --dark-mode :#181a1b;
 }
 
 h1,
@@ -46,7 +47,7 @@ h4 {
 h3 {
     font-weight: 750;
     font-size: 2.2rem;
-    line-height: 6rem;
+    /* line-height: 6rem; */
     text-transform: capitalize;
 }
 
@@ -78,18 +79,23 @@ li {
 }
 
 button {
-    padding: 0rem 1.5rem;
-    border-radius: 1.5rem;
+    padding: 0rem 1rem;
+    border-radius: 1rem;
     border: none;
     outline: none;
-    line-height: 3rem;
+    line-height: 2.5rem;
     text-transform: capitalize;
     cursor: pointer;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1rem;
     z-index: 9;
+    background-color: #3b82f6;
 
+}
+
+span{
+    color: #3b82f6;
 }
 
 
@@ -478,10 +484,13 @@ div.icon a img.icon4:hover {
 }
 
 section div .myimg img{
-    height: 35rem;
-    width: 25rem;
+    height: 39em;
+    width: 21rem;
     transition: all 0.2s;
     mix-blend-mode: luminosity;
+    cursor: pointer;
+    border-radius: 20px;
+    /* box-sizing: border-box; */
 }
 
 /* section div .myimg img:hover{
@@ -517,9 +526,57 @@ section .me-about{
     left: 0%;
 }
 
+div .about-text{
+    margin-top: 50px;
+}
+
+div .about-text #about-text-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+div .about-text .box-container{
+    display: flex;
+    margin-top: 30px;
+    
+}
+
+div .about-text .box-container .box p{
+    display: flex;
+    width: 100%;
+    left: 0%;
+    margin-left: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+div .about-text .box-container{
+    margin-left: 40px;
+}
 
 
 
+.resumebtn{
+    margin-top: 40px;
+}
+.resumebtn .btn{
+    color: #ffffff;
+}
+
+.resumebtn .btn i {
+    transition: 0.2s;
+  }
+  .resumebtn .btn:hover i {
+    margin-left: 3px;
+  }
+  .resumebtn .btn:hover {
+    background: #0361f8;
+  }
 
 
 
@@ -552,3 +609,92 @@ section .me-about{
   .resumebtn .btn:hover i {
     transform: translateX(5px);
   } */
+
+
+  /* education section starts */
+.education {
+    position: absolute;
+    top: 190%;
+    width: 100%;
+    background: var(--dark-mode);
+    min-height: 80vh;
+    padding-bottom: 2rem;
+  }
+.education h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .education .qoute {
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  .education .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .education .box-container .box {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 12rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.5rem 1rem ;
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    overflow: hidden;
+    transition: 0.2s;
+    background: rgba(218, 218, 218, 0.2);
+    box-shadow: none;
+  }
+  .education .box-container .box:hover {
+    transform: scale(1.03);
+    box-shadow: 1rem 0.5rem 1.2rem black;
+  }
+  .education .box-container .box .image {
+    flex: 1 1 20rem;
+    width: 100%;
+  }
+  .education .box-container .box img {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .education .box-container .box .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex: 1 1 70rem;
+  }
+  .education .box-container .box .content h3 {
+    font-size: 1.8rem;
+    color: #012970;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .education .box-container .box .content p {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  .education h4 {
+    font-size: 1.2rem;
+    color: rgb(34, 109, 0);
+    text-align: left;
+    margin: 1rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+  }
+  
+  /* education section ends*/
