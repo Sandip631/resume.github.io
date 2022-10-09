@@ -529,7 +529,7 @@ div.icon a img.icon4:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 105%;
+  top: 100%;
   width: initial;
   /* display: block; */
   margin: 0px;
@@ -660,7 +660,7 @@ div .about-text .box-container {
 /**************************** education section starts ******************************/
 .education {
   position: absolute;
-  top: 205%;
+  top: 200%;
   width: 100%;
   background: var(--dark-mode);
   min-height: 80vh;
