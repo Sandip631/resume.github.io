@@ -331,7 +331,7 @@ body {
 
 
 /*********************** **********************
-                                  Hero section  ***************************/
+                                  Hero section start  ***************************/
 
 .hero {
   z-index: 5;
@@ -366,6 +366,7 @@ p {
   max-width: 800px;
   margin: 0 auto;
   padding: 0.5rem;
+  padding-bottom: 2rem;
 }
 
 .hero-btns {
@@ -380,6 +381,38 @@ hr {
   margin-bottom: 10px;
 }
 
+.github_btn {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.github_btn .git_btn{
+  padding: 0rem 1rem;
+  border-radius: 1rem;
+  border: 1.5px solid var(--primaty_color);
+  outline: none;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  z-index: 9;
+  /* background-color: #181a1b; */
+  background: transparent;
+  color: var(--white_color);
+  transition: 0.2s all;
+
+}
+.github_btn .git_btn:hover{
+  background: #3b82f6;
+  border: 1.5px solid #3b82f6;
+}
+
+/*********************** **********************
+                                  Hero section end  ***************************/
 
 
 
@@ -467,25 +500,21 @@ section div.icon a img.icon4 {
 div.icon a img.icon1:hover {
   height: 70px;
   width: 70px;
-  /* border-radius: 40px; */
 }
 
 div.icon a img.icon2:hover {
   height: 70px;
   width: 70px;
-  /* border-radius: 40px; */
 }
 
 div.icon a img.icon3:hover {
   height: 70px;
   width: 70px;
-  /* border-radius: 40px; */
 }
 
 div.icon a img.icon4:hover {
   height: 70px;
   width: 70px;
-  /* border-radius: 40px; */
 
 }
 
