@@ -20,12 +20,17 @@ body {
 }
 
 body {
-  --main_color: #283526;
-  --primaty_color: #a3a3a3;
-  --button_background: #5679a3;
-  --primary_button_background: #fe7649;
-  --background_color: #e6ecf5;
-  --white_color: #ffff;
+  --main_color: #85a1c7;
+  --primaty_color: #000000;
+  --contaner_background: #aaaaaa;
+  --primary_button_background: #0042f7;
+  /* --primary_button_background: #b350f5; */
+  /* --blue_color: #rgb(27, 69, 255); */
+  --background_color: #ffffff;
+  --main_button_color : rgb(185, 164, 243);
+  --main_button_color_hover : rgb(167, 140, 240);
+  --white_color: rgb(48, 48, 48);
+  /* --all_backgroung :#ffff */
   --dark-mode: #181a1b;
   --contener-background: rgba(218, 218, 218, 0.2);
 }
@@ -33,7 +38,7 @@ body {
 h1,
 h2 {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--background_color);
+  color: var(--primaty_color);
   font-size: 4rem;
   margin-bottom: 25px;
   text-transform: capitalize;
@@ -42,7 +47,7 @@ h2 {
 h3,
 h4 {
   font-family: "muli";
-  color: var(--background_color);
+  color: var(--primaty_color);
 }
 
 h3 {
@@ -91,12 +96,14 @@ button {
   font-weight: normal;
   font-size: 1rem;
   z-index: 9;
-  background-color: #3b82f6;
+  background-color: var(--main_button_color);
 
 }
 
 span {
-  color: #3b82f6;
+  /* color: var(--primary_background_color); */
+  color: var(--primary_button_background);
+  font: bold;
 }
 
 
@@ -115,12 +122,12 @@ html {
 body {
   padding: 0;
   line-height: 1.5;
-  background: #181a1b;
+  background: var(--background_color);
 }
 
 
 header {
-  background: #181a1b;
+  background: var(--background_color);
   background-size: cover;
   /* min-height: 80vh; */
   position: relative;
@@ -173,7 +180,7 @@ header nav .right_side_menu .link::after {
   height: 2px;
   top: 3px;
   margin: auto;
-  background: #3b82f6;
+  background: var(--primary_button_background);
   transition: width 0.3s ease;
 }
 
@@ -182,7 +189,7 @@ header nav .right_side_menu .link:hover:after {
 }
 
 header nav .right_side_menu .link:hover i::before {
-  color: #3b82f6;
+  color: var(--primary_button_background);
   transition: 0.2s;
 }
 
@@ -215,7 +222,7 @@ div h1 {
 
 div h1 span {
   font-family: 'Rubik Dirt', cursive;
-  color: #3b82f6;
+  color: var(--primary_button_background);
 }
 
 header nav .left_side_menu {
@@ -254,7 +261,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background: #181a1b;
+  background: var(--background_color);
 }
 
 html {
@@ -276,14 +283,14 @@ body {
 /* ---- stats.js ---- */
 
 .count-particles {
-  background: #000022;
+  /* background: var(--primaty_color); */
   position: absolute;
   /* height: inherit;
   width: 100%; */
   top: 48px;
   left: 0;
   width: 80px;
-  color: #13E8E9;
+  /* color: #13E8E9; */
   font-size: .8em;
   text-align: left;
   text-indent: 4px;
@@ -319,7 +326,7 @@ body {
 #particles-js {
   width: 100%;
   height: 50rem;
-  background-color: #181a1b;
+  background-color: var(--background_color);
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -407,8 +414,8 @@ hr {
 
 }
 .github_btn .git_btn:hover{
-  background: #3b82f6;
-  border: 1.5px solid #3b82f6;
+  background: var(--main_button_color_hover);
+  border: 1.5px solid var(--main_button_color_hover);
 }
 
 /*********************** **********************
@@ -436,7 +443,7 @@ section div.icon {
   height: 300px;
   width: 75px;
   size: 20px;
-  opacity: 1;
+  /* opacity: 1; */
   margin: 0;
   padding: 0;
   display: flex;
@@ -564,13 +571,14 @@ section div .myimg {
 }
 
 
-.about_me span {
+/* .about_me span {
   color: #3b82f6;
 
-}
+} */
 
 h3 {
   font-size: 2rem;
+  color: var(--primaty_color);
 }
 
 .about_me h2 {
@@ -620,7 +628,7 @@ div .about-text .box-container .box p {
   width: 100%;
   left: 0%;
   margin-left: 20px;
-  color: #ffffff;
+  color: var(--white_color);
   margin-top: 20px;
   font-size: 20px;
 }
@@ -636,7 +644,7 @@ div .about-text .box-container {
 }
 
 .btn {
-  color: #ffffff;
+  color: var(--white_color);
 }
 
 .btn i {
@@ -648,7 +656,7 @@ div .about-text .box-container {
 }
 
 .btn:hover {
-  background: #0361f8;
+  background: var(--main_button_color_hover);
 }
 
 /* * ***********************************About Me end **************************************  */
@@ -662,7 +670,7 @@ div .about-text .box-container {
   position: absolute;
   top: 200%;
   width: 100%;
-  background: var(--dark-mode);
+  /* background: var(--dark-mode); */
   min-height: 80vh;
   padding-bottom: 2rem;
   padding-top: 3rem;
@@ -702,9 +710,10 @@ div .about-text .box-container {
   margin-top: 2rem;
   overflow: hidden;
   transition: 0.2s;
-  background: rgba(218, 218, 218, 0.2);
+  background: var(--contaner_background);
   box-shadow: none;
   cursor: pointer;
+  
 }
 
 .education .box-container .box:hover {
@@ -736,7 +745,7 @@ div .about-text .box-container {
 
 .education .box-container .box .content h3 {
   font-size: 1.8rem;
-  color: #3b82f6;
+  color: var(--primary_button_background);
   padding: 0.5rem 0;
   font-weight: 600;
   text-align: left;
@@ -793,7 +802,7 @@ div .about-text .box-container {
 .contact .container {
   max-width: 800px;
   width: 100%;
-  background: rgba(218, 218, 218, 0.2);
+  background: var(--main_color);
   border-radius: 1.5rem;
   margin: 2rem 5rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -918,11 +927,11 @@ form .button-area {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  background: var(--contener-background);
+  background: var(--contaner_background);
 }
 
 .map p {
-  color: white;
+  color: var(--white_color);
 }
 
 .mapouter {
